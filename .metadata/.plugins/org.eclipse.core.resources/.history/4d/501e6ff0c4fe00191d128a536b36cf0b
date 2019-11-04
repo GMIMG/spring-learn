@@ -1,0 +1,19 @@
+package com.multicampus.ex01;
+
+public class HelloController {
+	IHelloService helloService = new HelloService;
+	
+	public HelloController(IHelloService helloService) {
+		this.helloService = helloService;
+	}
+	
+	public void setHelloService(IHelloService helloServicd) {
+		this.helloService = helloService;
+		
+	}
+	
+	public void hello(String name) {
+		System.out.println("HelloController : " + helloService.sayHello(name));
+	}
+
+}

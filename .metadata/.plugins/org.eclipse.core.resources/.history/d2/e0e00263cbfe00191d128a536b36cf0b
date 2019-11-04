@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="HelloController" class="com.multicampus.ex01.HelloController">
+	<property name="helloService" ref="helloService"/>
+</bean>
+
+<bean id="personBean" class="">
+	<property name="name" value="JiminHwang" />
+	<property name="age' value="27" /></bean>
+
+</beans>
