@@ -1,0 +1,10 @@
+package com.multicampus.ex01;
+
+import java.util.List;
+
+public interface IEmpRepository {
+	int getEmpCount();
+	int getEmpCount(int deptid);
+	List<EmpV0> getEmpList();
+	EmpV0 getEmpInpo(int empid);
+}

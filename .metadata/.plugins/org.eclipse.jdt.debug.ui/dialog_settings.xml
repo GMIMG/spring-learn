@@ -2,7 +2,7 @@
 <section name="Workbench">
 	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
 		<item key="ShowStatusLine" value="true"/>
-		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=SpringProject/C:\/Users\/student\/.m2\/repository\/javax\/servlet\/jstl\/1.2\/jstl-1.2.jar&amp;lt;org.apache.taglibs.standard.lang.jstl.parser(ELParser.class[ELParser&lt;/infoNode&gt;&#x0D;&#x0A;&lt;/historyRootNode&gt;&#x0D;&#x0A;&lt;/History&gt;"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=ex01/src\/main\/java&amp;lt;com.multicampus.ex01{HelloMain.java[HelloMain&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=ex04/src\/main\/java&amp;lt;com.multicampus.ex01{HelloMain.java[HelloMain&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=ex5/src\/main\/java&amp;lt;com.multicampus.ex01{EmpMain.java[EmpMain&lt;/infoNode&gt;&#x0D;&#x0A;&lt;/historyRootNode&gt;&#x0D;&#x0A;&lt;/History&gt;"/>
 		<section name="DialogBoundsSettings">
 			<item key="DIALOG_HEIGHT" value="500"/>
 			<item key="DIALOG_WIDTH" value="600"/>

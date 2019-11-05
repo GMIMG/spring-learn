@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="SpringProject"/>
+<aop-project name="ex5"/>
+<aop-project name="ex01">
+<aspect-definition advice-class-name="com.multicampus.ex01.PerformanceAspect" advice-method-name="trace" advice-type="AROUND" aspect-end-line-number="28" aspect-name="performanceAspect" aspect-start-line-number="28" factory-id="org.springframework.ide.eclipse.aop.core.beanAspectDefinitionElementFactory" file="/ex01/src/main/resources/application-config.xml" pointcut-expression="execution(* com.multicampus..HelloService.sayHello(..))" proxy-target-class="false">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:ex01|3:src/main/resources/application-config.xml|7:beans:8|8:helloService:8" bean-file="/ex01/src/main/resources/application-config.xml" bean-start-line="8" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/ex01/src/main/resources/application-config.xml" source="=ex01/src\/main\/java&lt;com.multicampus.ex01{PerformanceAspect.java[PerformanceAspect~trace~QProceedingJoinPoint;" source-start-line="8" target="=ex01/src\/main\/java&lt;com.multicampus.ex01{HelloService.java[HelloService~sayHello~QString;" target-start-line="9"/>
+</aspect-definition>
+<aspect-definition advice-class-name="com.multicampus.ex01.HelloLog" advice-method-name="log" advice-type="BEFORE" aspect-end-line-number="23" aspect-name="helloLog" aspect-start-line-number="23" factory-id="org.springframework.ide.eclipse.aop.core.beanAspectDefinitionElementFactory" file="/ex01/src/main/resources/application-config.xml" pointcut-expression="execution(* com.multicampus..HelloService.sayHello(..))" proxy-target-class="false">
+<aop-reference advice-type="BEFORE" bean="1:BeansModel|2:ex01|3:src/main/resources/application-config.xml|7:beans:8|8:helloService:8" bean-file="/ex01/src/main/resources/application-config.xml" bean-start-line="8" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/ex01/src/main/resources/application-config.xml" source="=ex01/src\/main\/java&lt;com.multicampus.ex01{HelloLog.java[HelloLog~log" source-start-line="4" target="=ex01/src\/main\/java&lt;com.multicampus.ex01{HelloService.java[HelloService~sayHello~QString;" target-start-line="9"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="ex04"/>
 </aop-reference-model>

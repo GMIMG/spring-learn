@@ -1,6 +1,0 @@
-package com.multicampus.ex01;
-
-public interface IHelloService {
-	public static String sayHello(String name) {
-	}
-}
