@@ -20,6 +20,20 @@ public class EmpMain {
 		System.out.println("-- 사원 전체 정보를 조회합니다.");
 		System.out.println(empService.getEmpList());
 
+		
+		try {
+			System.out.println("--100번 사원의 정보를 삭제합니다.");
+			empService.deleteEmp(200, "JWHALEN");
+			} catch(Exception e) {
+				System.out.println(e.getMessage());
+			}
+		finally {
+			System.out.println("-- 100번 사원의 정보를 조회합니다.");
+			System.out.println(empService.getEmpInfo(200));
+			context.close();
+		}
+		
+		
 	}
 
 }

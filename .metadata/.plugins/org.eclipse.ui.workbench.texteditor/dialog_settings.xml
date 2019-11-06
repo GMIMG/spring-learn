@@ -6,8 +6,12 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="getEmpInfo"/>
+		<item key="selection" value="hikari"/>
 		<list key="findhistory">
+			<item value="hikari"/>
+			<item value="servlet"/>
+			<item value="aspectj"/>
+			<item value="grou"/>
 			<item value="getEmpInfo"/>
 			<item value="EmpV0"/>
 			<item value="reposi"/>
@@ -19,7 +23,7 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="894"/>
+		<item key="DIALOG_X_ORIGIN" value="514"/>
 		<item key="DIALOG_Y_ORIGIN" value="358"/>
 		<item key="DIALOG_WIDTH" value="288"/>
 		<item key="DIALOG_HEIGHT" value="391"/>
