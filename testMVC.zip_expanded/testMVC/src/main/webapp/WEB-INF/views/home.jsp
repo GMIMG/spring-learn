@@ -135,19 +135,5 @@ $(document).ready(function() {
     <button type="button" class="btn btn-success" onclick="save();">저장</button>
 </div>
 
-    <!--form method="POST" action = "/custmgr/index.jsp">
-    <input type="text" name="name" id="name">
-    </form-->
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
 </body>
 </html>

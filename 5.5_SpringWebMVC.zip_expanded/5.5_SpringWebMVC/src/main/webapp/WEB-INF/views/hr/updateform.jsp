@@ -35,21 +35,6 @@
 	<td><input type="date" name="hireDate" value="${emp.hireDate}" required></td>
 </tr>
 <tr>
-	<th>JOB_ID</th>
-	<td>
-		<select name="jobId">
-		<c:forEach var="job" items="${jobList}">
-			<c:if test="${emp.jobId == job.jobId}">
-				<option value="${job.jobId}" selected>${job.title}</option>
-			</c:if>
-			<c:if test="${emp.jobId != job.jobId}">
-				<option value="${job.jobId}">${job.title}</option>
-			</c:if>
-		</c:forEach>
-		</select>
-	</td>
-</tr>
-<tr>
 	<th>SALARY</th>
 	<td><input type="number" name="salary" value="${emp.salary}"></td>
 </tr>
@@ -67,21 +52,6 @@
 			</c:if>
 			<c:if test="${emp.managerId != manager.key}">
 				<option value="${manager.managerId}">${manager.firstName}</option>
-			</c:if>
-		</c:forEach>
-		</select>
-	</td>
-</tr>
-<tr>
-	<th>DEPARTMENT_ID</th>
-	<td>
-		<select name="departmentId">
-		<c:forEach var="department" items="${deptList}">
-			<c:if test="${emp.departmentId == department.managerId}">
-				<option value="${department.departmentId}" selected>${department.departmentName}</option>
-			</c:if>
-			<c:if test="${emp.departmentId != department.departmentId}">
-				<option value="${department.departmentId}">${department.departmentName}</option>
 			</c:if>
 		</c:forEach>
 		</select>

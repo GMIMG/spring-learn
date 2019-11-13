@@ -10,21 +10,20 @@
 
     <title>등록</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
     #content {background: rgb(255, 255, 255); color: black; height: 9%; font-size: 50px;
     font-size: 16px; margin: 15px; text-align: center;}
-
+	#indexslot {display: none;}
     #t1 {background: rgb(255, 255, 255); text-align: center; margin-top: 50px; font-size: 30px; letter-spacing: 5px;}
-    #ct {color:red}
+    #ct {color:red;}
 
     </style>
     
     <script>
             function check() {
-                if(fr.customerType.value == "") {
+                if(fr.customerType.value == "0") {
                 alert("고객유형을 입력하세요.");
                 fr.customerType.focus();
                 return false;}
@@ -88,6 +87,11 @@
     <div id="content">
         
         <form name="fr" onsubmit="return check()" action="./insert1" method="POST">
+        
+
+        
+            <label for="cId">번호 : ${max}</label>
+            <input id="indexslot" type="text" autofocus name="cId" value=${max}><br><br>
 
             
             <label for="customerType">고객유형</label><br>
@@ -97,12 +101,11 @@
 		            <option value="2">탑승자</option>
 	            </select><br><br>
             
-
             <label for="name">이름</label><br>
-            <input type="text" id="namebox" autofocus name="name" placeholder="이름"><br><br>
+            <input type="text" autofocus name="name" placeholder="이름"><br><br></
             
             <label for="phoneNumber">휴대전화번호</label><br>
-            <input type="text" autofocus name="phoneNumber" placeholder=" - 없이 작성하세요" onkeyup="this.value=this.value.replace(/[^0-9]/g,'');" minlength="10" maxlength="11"><br>
+            <input type="text" autofocus name="phoneNumber" placeholder=" - 없이 작성하세요" onkeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="11"><br>
             <br>
 
             <label for="cigar">흡연여부</label><br>
@@ -120,11 +123,10 @@
 
             <label for="memo">메모</label><br>
             <input type="text" autofocus name="memo" placeholder="메모를 입력하세요"><br><br>
-
-            <p><a href="question.html">문의사항</a><br></p><br>
             
-            <button type="submit" class="btn btn-default" value="">확인</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button type="reset" class="btn btn-default" value="">취소</button>
+            <button type="submit" class="btn btn-default" value="">확인</button>&nbsp;&nbsp;
+            <button type="reset" class="btn btn-default" value="">초기화</button>&nbsp;&nbsp;
+            <a href="<c:url value='/'/>"><button type="button" class="btn btn-default" value="">뒤로가기</button></a>
         </form>  
     </div>     
 </body>

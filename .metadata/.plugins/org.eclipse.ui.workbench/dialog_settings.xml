@@ -41,6 +41,11 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\student\Desktop\project_1113.zip"/>
+			<item value="C:\Users\student\Desktop\황지민3.zip"/>
+			<item value="C:\Users\student\Desktop\project2.zip"/>
+			<item value="C:\Users\student\Desktop\project4.zip"/>
+			<item value="C:\Users\student\Desktop\project3.zip"/>
 			<item value="C:\Users\student\Desktop\project.zip"/>
 		</list>
 	</section>

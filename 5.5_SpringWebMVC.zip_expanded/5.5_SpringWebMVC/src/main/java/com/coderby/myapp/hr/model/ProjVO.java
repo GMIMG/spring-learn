@@ -1,9 +1,8 @@
 package com.coderby.myapp.hr.model;
 
-import java.sql.Date;
-
 public class ProjVO {
-
+	
+	private int cId;
 	private String customerType;
 	private String name;
 	private String phoneNumber;
@@ -13,8 +12,20 @@ public class ProjVO {
 	private String sTime;
 	private String memo;
 	
-
 	
+	
+	public int getcId() {
+		return cId;
+	}
+
+
+
+	public void setcId(int cId) {
+		this.cId = cId;
+	}
+
+
+
 	public String getCustomerType() {
 		return customerType;
 	}

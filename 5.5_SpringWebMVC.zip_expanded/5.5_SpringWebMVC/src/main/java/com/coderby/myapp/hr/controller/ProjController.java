@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -30,7 +31,12 @@ public class ProjController {
 	
 	
 	@RequestMapping(value="/insert1")
-	public String connectinsert() {
+	public String connectinsert(Model model) {
+		int max = 0;
+		max = projService.maxindex();
+		//if (max == ndefined) max = 0;
+		max++;
+		model.addAttribute("max", max);
 		return "/hr/insert";
 	}
 	
@@ -56,6 +62,41 @@ public class ProjController {
 		return "home";
 	}
 	
+	
+	
+	
+	
+	
+	
+	//view
+	@RequestMapping(value="/{cId}")
+	public String getEmpInfo(@PathVariable int cId, Model model) {
+		ProjVO proj = projService.getProjInfo(cId);
+		model.addAttribute("proj", proj);
+		return "/hr/view2";
+	}
+	
+	
+	
+	
+	//update
+	@RequestMapping(value="/update2", method=RequestMethod.GET)
+	public String updateProj(int cId, Model model) {
+		model.addAttribute("proj", projService.getProjInfo(cId));
+		return "hr/updateform2";
+	}
+	
+	@RequestMapping(value="/update2", method=RequestMethod.POST)
+	public String updateProj(ProjVO proj, Model model) {
+		projService.updateProj(proj);
+		return "redirect:/"+proj.getcId();
+	}
+	
+	@RequestMapping(value="/delete1", method=RequestMethod.GET)
+	public String deleteProj(int cId, Model model) {
+		projService.deleteProj(cId);
+		return "redirect:/";
+	}
 	
 	
 	

@@ -11,50 +11,50 @@
 <table border="1">
 <tr>
 	<th>EMPLOYEE_ID</th>
-	<td>${emp.employeeId}</td>
+	<td>${proj.projloyeeId}</td>
 </tr>
 <tr>
 	<th>FIRST_NAME</th>
-	<td>${emp.firstName}</td>
+	<td>${proj.firstName}</td>
 </tr>
 <tr>
 	<th>LAST_NAME</th>
-	<td>${emp.lastName}</td>
+	<td>${proj.lastName}</td>
 </tr>
 <tr>
 	<th>EMAIL</th>
-	<td>${emp.email}</td>
+	<td>${proj.email}</td>
 </tr>
 <tr>
 	<th>PHONE_NUMBER</th>
-	<td>${emp.phoneNumber}</td>
+	<td>${proj.phoneNumber}</td>
 </tr>
 <tr>
 	<th>HIRE_DATE</th>
-	<td>${emp.hireDate}</td>
+	<td>${proj.hireDate}</td>
 </tr>
 <tr>
 	<th>JOB_ID</th>
-	<td>${emp.jobId}</td>
+	<td>${proj.jobId}</td>
 </tr>
 <tr>
 	<th>SALARY</th>
-	<td>${emp.salary}</td>
+	<td>${proj.salary}</td>
 </tr>
 <tr>
 	<th>COMMISSION_PCT</th>
-	<td>${emp.commissionPct}</td>
+	<td>${proj.commissionPct}</td>
 </tr>
 <tr>
 	<th>MANAGER_ID</th>
-	<td>${emp.managerId}</td>
+	<td>${proj.managerId}</td>
 </tr>
 <tr>
 	<th>DEPARTMENT_ID</th>
-	<td>${emp.departmentId}</td>
+	<td>${proj.departmentId}</td>
 </tr>
 </table>
-<a href="update?empid=${emp.employeeId}">수정하기</a> 
-<a href="delete?empid=${emp.employeeId}">삭제하기</a>
+<a href="update?projid=${proj.projloyeeId}">수정하기</a> 
+<a href="delete?projid=${proj.projloyeeId}">삭제하기</a>
 </body>
 </html>

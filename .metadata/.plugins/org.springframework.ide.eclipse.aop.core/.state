@@ -5,6 +5,7 @@
 <aop-reference advice-type="AROUND" bean="1:BeansModel|2:ex02_aop|3:src/main/resources/application-config.xml|7:beans:8|8:helloService:8" bean-file="/ex02_aop/src/main/resources/application-config.xml" bean-start-line="8" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/ex02_aop/src/main/resources/application-config.xml" source="=ex02_aop/src\/main\/java&lt;com.multicampus.ex01{PerformanceAspect.java[PerformanceAspect~trace~QProceedingJoinPoint;" source-start-line="7" target="=ex02_aop/src\/main\/java&lt;com.multicampus.ex01{HelloService.java[HelloService~sayHello~QString;" target-start-line="9"/>
 </aspect-definition>
 </aop-project>
+<aop-project name="delete"/>
 <aop-project name="ex01"/>
 <aop-project name="ex02"/>
 <aop-project name="ex04"/>

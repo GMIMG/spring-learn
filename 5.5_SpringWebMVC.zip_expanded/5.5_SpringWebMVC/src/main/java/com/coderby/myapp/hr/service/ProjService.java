@@ -1,7 +1,6 @@
 package com.coderby.myapp.hr.service;
 
 import java.util.List;
-import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,8 +20,8 @@ public class ProjService implements IProjService {
 	}
 
 	@Override
-	public ProjVO getProjInfo(String s) {
-		return projRepository.getProjInfo(s);
+	public ProjVO getProjInfo(int cId) {
+		return projRepository.getProjInfo(cId);
 	}
 
 	@Override
@@ -33,6 +32,21 @@ public class ProjService implements IProjService {
 	@Override
 	public List<ProjVO> searchProj(int t, String sp) {
 		return projRepository.searchProj(t, sp);
+	}
+	
+	@Override
+	public int maxindex() {
+		return projRepository.maxindex();
+	}
+	
+	@Override
+	public void updateProj(ProjVO proj) {
+		projRepository.updateProj(proj);
+	}
+	
+	@Override
+	public void deleteProj(int cId) {
+		projRepository.deleteProj(cId);
 	}
 	
 }
