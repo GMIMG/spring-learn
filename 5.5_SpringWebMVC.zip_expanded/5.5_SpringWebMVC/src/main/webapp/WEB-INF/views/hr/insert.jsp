@@ -14,8 +14,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-    #content {background: rgb(255, 255, 255); color: black; height: 9%; float: none; width: 40%; font-size: 50px;
-    font-size: 16px; margin: 15px; margin-left: 380px; text-align: center;}
+    #content {background: rgb(255, 255, 255); color: black; height: 9%; font-size: 50px;
+    font-size: 16px; margin: 15px; text-align: center;}
 
     #t1 {background: rgb(255, 255, 255); text-align: center; margin-top: 50px; font-size: 30px; letter-spacing: 5px;}
     #ct {color:red}
@@ -85,17 +85,17 @@
 <body>
     <div id="t1">타즈아 정보를 입력하세요.</div>
 
-    <div id="content" class="container">
+    <div id="content">
         
         <form name="fr" onsubmit="return check()" action="./insert1" method="POST">
 
             
             <label for="customerType">고객유형</label><br>
-            <select name="customerType">
-                <div id="ct"><option value="0" style="color:lightgray">고객유형을 선택하세요.</option></div>
-            <option value="1">운전자</option>
-            <option value="2">탑승자</option>
-            </select><br><br>
+	            <select name="customerType">
+		            <option value="0" style="color:lightgray">고객유형을 선택하세요.</option>
+		            <option value="1">운전자</option>
+		            <option value="2">탑승자</option>
+	            </select><br><br>
             
 
             <label for="name">이름</label><br>
@@ -106,8 +106,8 @@
             <br>
 
             <label for="cigar">흡연여부</label><br>
-            <input type="radio" checked name="cigar" value="흡연"> 흡연&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="radio" name="cigar" value="비흡연"> 비흡연<br><br>
+            <input type="radio" checked name="cigar" value="비흡연"> 비흡연&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="cigar" value="흡연"> 흡연<br><br>
             
             <label for="sPoint">출발지</label><br>
             <input type="text" autofocus name="sPoint" placeholder="역삼"><br><br>

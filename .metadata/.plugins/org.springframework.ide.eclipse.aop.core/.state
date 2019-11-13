@@ -9,6 +9,7 @@
 <aop-project name="ex02"/>
 <aop-project name="ex04"/>
 <aop-project name="ex05"/>
+<aop-project name="5.5_SpringWebMVC"/>
 <aop-project name="testMVC_HJM"/>
 <aop-project name="ex06_SpringWebMVC"/>
 </aop-reference-model>

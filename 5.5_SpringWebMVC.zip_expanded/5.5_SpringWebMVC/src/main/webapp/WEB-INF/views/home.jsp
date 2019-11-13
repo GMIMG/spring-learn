@@ -23,6 +23,10 @@
     
     <script>
 	    function check() {
+            if(fr.customerType.value == "0") {
+            	alert("검색 유형을 선택하세요.");
+            	return false;
+            }
 	        if(fr.searchString.value == "") {
 	        alert("검색 내용을 입력하세요.");
 	        fr.searchString.focus();
@@ -64,7 +68,7 @@
 <body>
 
 <header>
-	<img class="header-img" alt="카풀이미지" src="<c:url value='./carpool.jpg'/>" >
+	<img class="header-img" alt="카풀이미지" src="<c:url value='/carpool.jpg'/>" >
 </header>
 
 
@@ -81,14 +85,14 @@
                         <span class="icon-bar"></span> 
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="<c:url value='/'/>">
                         타즈아
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="nav_menu">
                     <ul class="nav navbar-nav">
                         <li class="active">
-                            <a href="<c:url value='/hr/insert1'/>">운전자 등록</a>
+                            <a href="<c:url value='/insert1'/>">운전자 등록</a>
                         </li>
                         <li>
                             <a href="">탑승자 등록</a>
@@ -121,21 +125,20 @@
 
         <div class="col-sm-9">
         
-        <div id="content" class="container">
-            <form name="fr" onsubmit="return check()" action="search.jsp" method="POST">
+        <div id="content">
+            <form name="fr" onsubmit="return check()" action="./search" method="POST">
 		        
-		            <select name="customerType" >
-		                <option value="0" style="color:lightgray">검색유형</option>
-		                <option value="1">출발지</option>
-		                <option value="2">도착지</option>
-		                <option value="3">출발시간</option>
-		                <option value="4">번호</option>
-		            </select>
-	        
+	            <select name="customerType" >
+	                <option value="0" style="color:lightgray">검색유형</option>
+	                <option value="1">출발지</option>
+	                <option value="2">도착지</option>
+	                <option value="3">출발시간</option>
+	            </select>
+	     
 	            <input id = "redline" style="border-radius: 80px/120px;" type="text" autofocus name="searchString" placeholder="검색어를 입력하세요">
 	            &nbsp;<button type="submit" class="btn btn-default" value="">검 색</button>
 	        </form>         
-	    </div>     
+	    </div>
             
             
             
@@ -175,11 +178,6 @@
 </tr>
 </c:forEach>
 </table>
-
-
-
-
-
 
             <nav class="text-center">
                 <ul class="pagination">

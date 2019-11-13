@@ -30,4 +30,9 @@ public class ProjService implements IProjService {
 		projRepository.insertProj(proj);
 	}
 	
+	@Override
+	public List<ProjVO> searchProj(int t, String sp) {
+		return projRepository.searchProj(t, sp);
+	}
+	
 }

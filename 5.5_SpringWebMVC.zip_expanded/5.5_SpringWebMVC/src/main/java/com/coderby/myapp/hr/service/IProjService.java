@@ -10,4 +10,5 @@ public interface IProjService {
 	void insertProj(ProjVO proj);
 	List<ProjVO> getProjList();
 	
+	List<ProjVO> searchProj(int t, String sp);
 }

@@ -1,6 +1,0 @@
-package com.multicampus.ex01;
-
-@Repository
-public class EmpMapper {
-
-}

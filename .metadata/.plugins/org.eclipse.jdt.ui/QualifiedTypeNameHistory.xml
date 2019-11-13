@@ -13,4 +13,5 @@
 <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="com.coderby.myapp.hr.service.IProjService"/>
 </qualifiedTypeNameHistroy>
